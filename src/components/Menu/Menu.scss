@@ -44,21 +44,29 @@
 }
 
 .header{
-    background-color: #061321;
-    &-logo{
-        background-image: url(images/logo-mobile.png);
-        width: 100px;
+    background-image: url(images/header-bg.jpg);
+    height: 80vh;
+    background-repeat: no-repeat;
+    background-position: center 0;
+    position: relative;
+    .top-bar{
+        background-color: #061321;
+        width: 100%;
+    }
+    .header-logo{
+        background-image: url(images/logo.png);
+        width: 170px;
         height: 100px;
         background-repeat: no-repeat;
         background-position: center;
         margin: 0 auto;
     }
-    &-mobile-menu{
+    .header-mobile-menu{
         .header-list{
             display: none;
         }
     }
-    &-list{
+    .header-list{
         li{
             padding: 10px;
             a{
@@ -82,27 +90,37 @@
             }
         }
     }
-    &-menu{
+    .header-menu{
         .header-list{
             display: none;
         }
     }
-    &-mobile-menu{
+    .header-mobile-menu{
         .header-list{
             display: flex;
             flex-wrap: wrap;
             flex-direction: column;
+            background-color: #061321;
         }
         .header-hamburger{
             position: absolute;
             right: 5%;
-            top: 4%;
+            top: 7%;
             cursor: pointer;
         }
     }
+    &-img{
+        background-image: url(images/header-center-mobile-img.png);
+        width: 280px;
+        height: 100px;
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
 }
 
-@media (max-width:768px) {
+@media (min-width:768px) {
     .container{
         max-width: 720px;
     }
@@ -143,11 +161,30 @@
         max-width: 74.99997%;
     }
 
-    .header-logo{
+    .header .header-logo{
         margin: 0 0;
     }
     .header-mobile-menu{
         margin-left: -10px;
+    }
+
+    .header-menu{
+        display: flex;
+        justify-content: flex-end;
+    }
+    .header-mobile-menu{
+        .header-list{
+            background-color: #061321;
+            li{
+                width: 250px;
+            }
+        }
+    }
+    .header .header-mobile-menu .header-hamburger {
+        position: absolute;
+        right: 7%;
+        top: 7%;
+        cursor: pointer;
     }
 }
 
@@ -191,33 +228,28 @@
         flex: 0 0 74.99997%;
         max-width: 74.99997%;
     }
-    .header{
-        &-logo{
-            margin: 0 0;
-        }
-        &-menu{
-            height: 100%;
-            display: flex;
-            align-content: center;
-            justify-content: end;
-            align-items: center;
-            .header-list{
-                display: flex;
-                flex-direction: row;
+    .header .header-logo{
+        margin: 0 0;
+    }
+    .header-mobile-menu{
+        margin-left: -10px;
+    }
+
+    .header-menu{
+        display: flex;
+        justify-content: end;
+    }
+    .header-mobile-menu{
+        .header-list{
+            background-color: #061321;
+            li{
+                width: 250px;
             }
         }
-        &-mobile-menu{
-            .header-list{
-                display: none;
-            }
-        }
-        .header-hamburger{
-            display: none;
-            position: absolute;
-            right: 5%;
-            top: 4%;
-            cursor: pointer;
-        }
+    }
+    .header .header-img{
+        top: 40%;
+        left: 50%;
     }
 }
 
@@ -237,11 +269,40 @@
         max-width: 33.33333%;
     }
     .col-lg-9{
-        flex: 0 0 74.99997%;
-        max-width: 74.99997%;
+        flex: 0 0 75%;
+        max-width: 75%;
     }
     .col-lg-12{
         flex: 0 0 100%;
         max-width: 100%;
     } 
+
+    .header .header-mobile-menu{
+        display: none;
+    }
+    .header{
+        &-menu{
+            height: 100%;
+        }
+    }
+    .header .header-menu .header-list{
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        li{
+            a{
+                font-size: 20px;
+            }
+            &:last-child{
+                padding-bottom: 10px;
+            }
+        }
+    }
+    .header .header-mobile-menu .header-hamburger {
+        display: none;
+    }
+    .header .header-img{
+        top: 40%;
+        left: 50%;
+    }
 }

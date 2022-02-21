@@ -2,22 +2,28 @@ export const NavigationLinks = () => {
   return (
     <ul className="header-list">
       <li>
-        <a href="">HOME</a>
+        <a href="">Home</a>
       </li>
       <li>
-        <a href="">FOOD BLOG</a>
+        <a href="">Hot articles</a>
       </li>
       <li>
-        <a href="">DIETS</a>
+        <a href="">People</a>
       </li>
       <li>
-        <a href="">ABOUT</a>
+        <a href="">Places</a>
       </li>
       <li>
-        <a href="">CONTACT US</a>
+        <a href="">Stories</a>
       </li>
       <li>
-        <a href="">BUY NOW</a>
+        <a href="">About us</a>
+      </li>
+      <li>
+        <a href="">Contact</a>
+      </li>
+      <li>
+        <a href="">Buy Now</a>
       </li>
     </ul>
   );
