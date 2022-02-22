@@ -60,11 +60,6 @@
   position: relative;
 }
 
-.header .top-bar {
-  background-color: #061321;
-  width: 100%;
-}
-
 .header .header-logo {
   background-image: url(images/logo.png);
   width: 170px;
@@ -72,10 +67,6 @@
   background-repeat: no-repeat;
   background-position: center;
   margin: 0 auto;
-}
-
-.header .header-mobile-menu .header-list {
-  display: none;
 }
 
 .header .header-list li {
@@ -137,7 +128,7 @@
   width: 280px;
   height: 100px;
   position: absolute;
-  top: 60%;
+  top: 75%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
