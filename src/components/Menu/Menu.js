@@ -1,5 +1,5 @@
 import React from "react";
-import reset from "common/reset.css";
+
 import "./Menu.css";
 import { Navigation } from "./Navigation";
 import { MobileNavigation } from "./MobileNavigation";

@@ -1,0 +1,128 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.peoples-life {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 0.2fr 1fr 1fr 1fr;
+      grid-template-rows: 0.2fr 1fr 1fr 1fr;
+  padding: 40px 30px 0 30px;
+}
+
+.peoples-life-title {
+  background-color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  text-align: center;
+  line-height: 70px;
+}
+
+.peoples-life-first-article {
+  background-image: url(images/peoples-life-girl-mobile.jpg);
+}
+
+.peoples-life-second-article {
+  background-image: url(images/people-life-guitar-mobile.jpg);
+}
+
+.peoples-life-third-article {
+  background-image: url(images/people-life-man-mobile.jpg);
+}
+
+.life-article {
+  width: 100%;
+  height: 320px;
+  position: relative;
+  background-position: center center;
+  margin-bottom: 15px;
+}
+
+.life-article:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.2);
+  z-index: 2;
+}
+
+.life-description {
+  color: #fff;
+  position: absolute;
+  font-size: 17px;
+  bottom: 0;
+  padding: 40px;
+  z-index: 3;
+  font-family: 'Work Sans', sans-serif;
+}
+
+@media (min-width: 768px) {
+  .peoples-life {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: 0.2fr 1fr;
+        grid-template-rows: 0.2fr 1fr;
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    padding: 40px 30px 0 30px;
+  }
+  .peoples-life-title {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-column: 1/4;
+  }
+  .peoples-life-first-article {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2/3;
+  }
+  .peoples-life-second-article {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2/3;
+  }
+  .peoples-life-third-article {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2/3;
+  }
+}
+
+@media (min-width: 1200px) {
+  .peoples-life {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: 0.2fr 1fr;
+        grid-template-rows: 0.2fr 1fr;
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    padding: 40px 130px 0 130px;
+  }
+  .peoples-life-title {
+    font-size: 26px;
+  }
+  .peoples-life-first-article {
+    background-image: url(images/peoples-life-girl.jpg);
+  }
+  .peoples-life-second-article {
+    background-image: url(images/people-life-guitar.jpg);
+  }
+  .peoples-life-third-article {
+    background-image: url(images/people-life-man.jpg);
+  }
+  .life-article {
+    height: 400px;
+  }
+  .life-description {
+    font-size: 20px;
+    bottom: 0;
+    padding: 40px;
+    z-index: 3;
+    font-family: 'Work Sans', sans-serif;
+  }
+}
+/*# sourceMappingURL=PeoplesLife.css.map */

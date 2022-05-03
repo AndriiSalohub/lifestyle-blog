@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,500;1,500&family=Be+Vietnam+Pro:wght@300&family=Hammersmith+One&family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,600;1,700&family=Mukta&family=Noto+Serif+Display:ital,wght@1,200;1,400&family=Noto+Serif:wght@700&family=Open+Sans:wght@400;700&family=Outfit:wght@300;700&family=PT+Serif&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab&family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,900&family=Work+Sans&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+.small-biography{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 0.5fr;
+    padding: 40px 30px 0 30px;
+    &-quote{
+        background-image: url(images/small-biography-background-sm.jpg);
+        background-position: center center;
+        margin-bottom: 40px;
+        &-simbol{
+            background-image: url(images/quote-simpol.png);
+            width: 30px;
+            height: 30px;
+            background-repeat: no-repeat;
+            margin: 70px auto 20px auto;
+        }
+        &-title{
+            color: rgb(211, 127, 18);
+            text-align: center;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 15px;
+            margin-bottom: 25px;
+        }
+        &-text{
+            color: #fff;
+            text-align: center;
+            font-size: 14px;
+            line-height: 19px;
+            letter-spacing: 1px;
+            font-family: 'Mukta', sans-serif;
+            margin-bottom: 40px;
+            padding: 20px;
+        }
+        &-author{
+            font-family: 'Work Sans', sans-serif;
+            text-align: center;
+            color: #fff;
+            margin-bottom: 80px;
+        }
+    }
+    &-featured-author{
+        background-color: #fff;
+        &-avatar{
+            background-image: url(images/avatar.png);
+            width: 150px;
+            height: 150px;
+            margin: 40px auto 20px auto;
+            background-repeat: no-repeat;
+            padding: 10px;
+        }
+        &-subtitle{
+            color: #db9d3a;
+            text-align: center;
+            font-family: 'Work Sans', sans-serif;
+            font-size: 15px;
+            margin-bottom: 15px;
+            padding: 10px;
+        }
+        &-title{
+            text-align: center;
+            font-family: 'Work Sans', sans-serif;
+            font-size: 15px;
+            margin-bottom: 18px;
+            padding: 10px;
+        }
+        &-text{
+            text-align: center;
+            font-size: 16px;
+            line-height: 19px;
+            color: rgba(163, 162, 162, 0.657);
+            font-family: 'Work Sans', sans-serif;
+            margin-bottom: 40px;
+            padding: 10px;
+        }
+    }
+}
+
+@media (min-width:768px) {   
+    .small-biography{
+        &-quote{
+            margin-bottom: 30px;
+            &-title{
+                font-size: 17px;
+            }
+            &-text{
+                font-size: 22px;
+            }
+            &-author{
+                font-family: 'Work Sans', sans-serif;
+                text-align: center;
+                color: #fff;
+                margin-bottom: 40px;
+            }
+        }
+        &-featured-author{
+            &-subtitle{
+                font-size: 17px;
+            }
+            &-title{
+                font-size: 17px;
+            }
+            &-text{
+                font-size: 18px;
+            }
+        }
+    }
+}
+
+@media (min-width:992px) {
+    .small-biography{
+        &-quote{
+            background-image: url(images/small-biography-background-md.jpg);
+            width: 100%;
+        }
+    }
+}
+
+@media (min-width:1200px) {
+    .small-biography{
+        display: grid;
+        grid-template-columns: 1fr 0.4fr;
+        grid-template-rows: 1fr;
+        grid-gap: 30px;
+        padding: 40px 130px 0 130px;
+        &-quote{
+            background-image: url(images/small-biography-background-lg.jpg);
+            width: 100%;
+            height: 100%;
+        }
+    }
+}

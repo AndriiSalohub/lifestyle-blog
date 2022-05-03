@@ -1,0 +1,173 @@
+@import url("https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,500;1,500&family=Be+Vietnam+Pro:wght@300&family=Hammersmith+One&family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,600;1,700&family=Mukta&family=Noto+Serif+Display:ital,wght@1,200;1,400&family=Noto+Serif:wght@700&family=Open+Sans:wght@400;700&family=Outfit:wght@300;700&family=PT+Serif&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab&family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,900&family=Work+Sans&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.places-and-stories {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+  padding: 40px 30px 30px 30px;
+}
+
+.places-and-stories-place-title {
+  background-color: #fff;
+  font-size: 20px;
+  text-align: center;
+  line-height: 70px;
+}
+
+.places-and-stories-place-mountains {
+  background-image: url(images/mountains-sm.jpg);
+}
+
+.places-and-stories-place-forest {
+  background-image: url(images/forest-sm.jpg);
+}
+
+.places-and-stories-story-title {
+  background-color: #fff;
+  font-size: 20px;
+  text-align: center;
+  line-height: 70px;
+}
+
+.places-and-stories-story-mother {
+  background-image: url(images/mother-sm.jpg);
+}
+
+.places-and-stories-story-girl {
+  background-image: url(images/girl-sm.jpg);
+}
+
+.places-and-stories-img {
+  background-position: center center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 320px;
+  position: relative;
+}
+
+.places-and-stories-img:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.2);
+  z-index: 2;
+}
+
+.places-and-stories-description {
+  color: #fff;
+  font-size: 18px;
+  position: absolute;
+  bottom: 0;
+  padding: 40px;
+  z-index: 3;
+  font-family: 'Work Sans', sans-serif;
+}
+
+@media (min-width: 768px) {
+  .places-and-stories {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: 1fr;
+        grid-template-rows: 1fr;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+    padding: 40px 30px 0 30px;
+  }
+  .places-and-stories-place {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: 0.1fr 1fr;
+        grid-template-rows: 0.1fr 1fr;
+  }
+  .places-and-stories-place-title {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-column: 1/3;
+  }
+  .places-and-stories-place-mountains {
+    background-image: url(images/mountains-md.jpg);
+  }
+  .places-and-stories-place-forest {
+    background-image: url(images/forest-md.jpg);
+  }
+  .places-and-stories-story {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: 0.1fr 1fr;
+        grid-template-rows: 0.1fr 1fr;
+  }
+  .places-and-stories-story-title {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-column: 1/3;
+  }
+  .places-and-stories-story-girl {
+    background-image: url(images/girl-md.jpg);
+  }
+  .places-and-stories-story-mother {
+    background-image: url(images/mother-md.jpg);
+  }
+  .places-and-stories-img {
+    background-position: center 0;
+    width: 100%;
+    height: 150px;
+  }
+  .places-and-stories-description {
+    font-size: 15px;
+    padding: 20px;
+  }
+}
+
+@media (min-width: 992px) {
+  .places-and-stories-place-mountains {
+    background-image: url(images/mountains-sm.jpg);
+  }
+  .places-and-stories-place-forest {
+    background-image: url(images/forest-sm.jpg);
+  }
+  .places-and-stories-story-girl {
+    background-image: url(images/girl-sm.jpg);
+  }
+  .places-and-stories-story-mother {
+    background-image: url(images/mother-sm.jpg);
+  }
+  .places-and-stories-img {
+    background-position: center 0;
+    width: 100%;
+    height: 300px;
+  }
+  .places-and-stories-description {
+    font-size: 18px;
+    padding: 40px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .places-and-stories {
+    padding: 40px 130px 0 130px;
+  }
+  .places-and-stories-place-title {
+    font-size: 24px;
+  }
+  .places-and-stories-story-title {
+    font-size: 24px;
+  }
+  .places-and-stories-description {
+    font-size: 20px;
+    padding: 20px;
+  }
+}
+/*# sourceMappingURL=PlacesAndStories.css.map */

@@ -1,0 +1,173 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@500&family=Poppins&family=Roboto+Slab&family=Work+Sans:wght@700&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.about-us {
+  background-color: #fff;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+  padding: 40px 30px 0 30px;
+}
+
+.about-us-title {
+  font-size: 16px;
+  padding-bottom: 30px;
+  font-family: 'Roboto Slab', serif;
+}
+
+.about-us-text {
+  font-size: 14px;
+  font-family: 'Poppins', sans-serif;
+  padding-bottom: 15px;
+}
+
+.about-us-inform {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 0.3fr 0.7fr 0.7fr;
+      grid-template-rows: 0.3fr 0.7fr 0.7fr;
+}
+
+.about-us-inform-pale-text {
+  color: #939393;
+  padding-bottom: 30px;
+}
+
+.about-us-authors {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 0.4fr 1fr 1fr 1fr;
+      grid-template-rows: 0.4fr 1fr 1fr 1fr;
+}
+
+.about-us-authors-title {
+  font-size: 14px;
+  font-family: 'Nunito', sans-serif;
+}
+
+.about-us-become-an-author {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 0.5fr 0.8fr 0.9fr 0.3fr;
+      grid-template-rows: 0.5fr 0.8fr 0.9fr 0.3fr;
+}
+
+.about-us-become-an-author-title {
+  margin-top: 20px;
+}
+
+.about-us-become-an-author-pale-text {
+  color: #939393;
+  padding-bottom: 30px;
+}
+
+.about-us-become-an-author-read-more-btn {
+  padding: 10px;
+  width: 40%;
+  margin-bottom: 30px;
+  border: 3px solid #db9d3a;
+  color: #db9d3a;
+  border-radius: 5%;
+}
+
+.about-us-become-an-author-read-more-btn:hover {
+  color: #fff;
+  background-color: #db9d3a;
+}
+
+.authors {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 0.1fr 1fr;
+      grid-template-columns: 0.1fr 1fr;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.authors-photo {
+  background-image: url(images/author-title.png);
+  width: 40px;
+  height: 40px;
+  background-repeat: no-repeat;
+}
+
+.author-name {
+  font-size: 14px;
+  font-weight: 700;
+  font-family: 'Work Sans', sans-serif;
+  margin-bottom: 10px;
+}
+
+.author-description {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 15px;
+  color: #939393;
+}
+
+@media (min-width: 768px) {
+  .about-us {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: 1fr;
+        grid-template-rows: 1fr;
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+    padding-bottom: 20px;
+  }
+  .about-us-title {
+    font-size: 25px;
+    padding-bottom: 10px;
+    font-family: 'Roboto Slab', serif;
+  }
+  .about-us-become-an-author-title {
+    margin-top: 0px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .about-us {
+    background-color: #fff;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: 1fr;
+        grid-template-rows: 1fr;
+    padding: 40px 130px 0 130px;
+  }
+  .about-us-title {
+    font-size: 25px;
+    padding-bottom: 10px;
+    font-family: 'Roboto Slab', serif;
+  }
+  .about-us-text {
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    padding-bottom: 15px;
+  }
+  .about-us-inform {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: 0.3fr 0.7fr 0.7fr;
+        grid-template-rows: 0.3fr 0.7fr 0.7fr;
+  }
+  .about-us-inform-pale-text {
+    font-size: 16px;
+    color: #939393;
+    padding-bottom: 30px;
+  }
+  .about-us-authors {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: 0.4fr 1fr 1fr 1fr;
+        grid-template-rows: 0.4fr 1fr 1fr 1fr;
+  }
+  .about-us-authors-title {
+    font-family: 'Nunito', sans-serif;
+  }
+}
+/*# sourceMappingURL=AboutUs.css.map */

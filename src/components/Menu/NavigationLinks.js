@@ -1,29 +1,31 @@
+import { NavLink } from "react-router-dom";
+
 export const NavigationLinks = () => {
   return (
     <ul className="header-list">
       <li>
-        <a href="">Home</a>
+        <NavLink to="/">Home</NavLink>
       </li>
       <li>
-        <a href="">Hot articles</a>
+        <NavLink to="/hot-articles">Hot Articles</NavLink>
       </li>
       <li>
-        <a href="">People</a>
+        <NavLink to="/people">People</NavLink>
       </li>
       <li>
-        <a href="">Places</a>
+        <NavLink to="/places">Places</NavLink>
       </li>
       <li>
-        <a href="">Stories</a>
+        <NavLink to="/stories">Stories</NavLink>
       </li>
       <li>
-        <a href="">About us</a>
+        <NavLink to="/about-us">About us</NavLink>
       </li>
       <li>
-        <a href="">Contact</a>
+        <NavLink to="/contact">Contact</NavLink>
       </li>
       <li>
-        <a href="">Buy Now</a>
+        <NavLink to="/buy-now">BUY NOW</NavLink>
       </li>
     </ul>
   );

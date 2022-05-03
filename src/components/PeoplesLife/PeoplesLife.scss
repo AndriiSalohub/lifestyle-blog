@@ -1,0 +1,103 @@
+*{
+    box-sizing: border-box;
+}
+
+.peoples-life{
+    display: grid;
+    grid-template-rows: 0.2fr 1fr 1fr 1fr;
+    padding: 40px 30px 0 30px;
+    &-title{
+        background-color: #fff;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 18px;
+        text-align: center;
+        line-height: 70px;
+    }
+    &-first-article{
+        background-image: url(images/peoples-life-girl-mobile.jpg);
+    }
+    &-second-article{
+        background-image: url(images/people-life-guitar-mobile.jpg);
+    }
+    &-third-article{
+        background-image: url(images/people-life-man-mobile.jpg);
+    }
+}
+
+.life-article{
+    width: 100%;
+    height: 320px;
+    position: relative;
+    background-position: center center;
+    margin-bottom: 15px;
+    &:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0,0,0,.2);
+        z-index: 2;
+      }
+}
+.life-description{
+    color: #fff;
+    position: absolute;
+    font-size: 17px;
+    bottom: 0;
+    padding: 40px;
+    z-index: 3;
+    font-family: 'Work Sans', sans-serif;
+}
+@media (min-width:768px) {  
+    .peoples-life{
+        display: grid;
+        grid-template-rows: 0.2fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+        padding: 40px 30px 0 30px;
+        &-title{
+            grid-column: 1/4;
+        }
+        &-first-article{
+            grid-row: 2/3;
+        }
+        &-second-article{
+            grid-row: 2/3;
+        }
+        &-third-article{
+            grid-row: 2/3;
+        }
+    } 
+}
+
+@media (min-width:1200px) {
+    .peoples-life{
+        display: grid;
+        grid-template-rows: 0.2fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+        padding: 40px 130px 0 130px;
+        &-title{
+            font-size: 26px;
+        }
+        &-first-article{
+            background-image: url(images/peoples-life-girl.jpg);
+        }
+        &-second-article{
+            background-image: url(images/people-life-guitar.jpg);
+        }
+        &-third-article{
+            background-image: url(images/people-life-man.jpg);
+        }
+    }
+    .life-article{
+        height: 400px;
+    }
+    .life-description{
+        font-size: 20px;
+        bottom: 0;
+        padding: 40px;
+        z-index: 3;
+        font-family: 'Work Sans', sans-serif;
+    }
+}

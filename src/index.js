@@ -1,6 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import { App } from "containers/App/App";
+import { BrowserRouter } from "react-router-dom";
 
 /*const el = (
   <div>
@@ -9,4 +10,9 @@ import { App } from "containers/App/App";
 );npm
 */
 
-ReactDOM.render(<App />, document.getElementById("root"));
+ReactDOM.render(
+  <BrowserRouter>
+    <App />
+  </BrowserRouter>,
+  document.getElementById("root")
+);
