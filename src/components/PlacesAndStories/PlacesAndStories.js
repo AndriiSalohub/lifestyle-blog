@@ -12,11 +12,13 @@ export const PlacesAndStories = () => {
           <div className="places-and-stories-place-mountains-description places-and-stories-description">
             Fusce lorem ligula
           </div>
+          <div className="places-and-stories-background"></div>
         </div>
         <div className="places-and-stories-place-forest places-and-stories-img">
           <div className="places-and-stories-place-forest-description places-and-stories-description">
             Proin sed hendrerit nonummy
           </div>
+          <div className="places-and-stories-background"></div>
         </div>
       </div>
       <div className="places-and-stories-story">
@@ -25,11 +27,13 @@ export const PlacesAndStories = () => {
           <div className="places-and-stories-story-mother-description places-and-stories-description">
             Donec tempus urna risus
           </div>
+          <div className="places-and-stories-background"></div>
         </div>
         <div className="places-and-stories-story-girl places-and-stories-img">
           <div className="places-and-stories-story-girl-description places-and-stories-description">
             Videamus animi partes quarum
           </div>
+          <div className="places-and-stories-background"></div>
         </div>
       </div>
     </section>

@@ -106,4 +106,55 @@
     bottom: 10px;
   }
 }
+
+@media (min-width: 1600px) {
+  .articles {
+    -ms-grid-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    -ms-grid-rows: 1fr;
+        grid-template-rows: 1fr;
+  }
+  .articles-first {
+    background-image: url(images/beach-lg.jpg);
+  }
+  .articles-second {
+    background-image: url(images/smoking-lg.jpg);
+  }
+  .articles-third {
+    background-image: url(images/river-lg.jpg);
+  }
+  .articles-fourth {
+    background-image: url(images/home-desert-lg.jpg);
+  }
+  .article {
+    width: 480px;
+    height: 600px;
+    background-position: center center;
+    position: relative;
+    -webkit-transition: -webkit-transform 0.5s;
+    transition: -webkit-transform 0.5s;
+    transition: transform 0.5s;
+    transition: transform 0.5s, -webkit-transform 0.5s;
+  }
+  .article:hover {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  .article::before {
+    content: "";
+    width: 0;
+    height: 0;
+    background: transparent;
+    border: 2px solid transparent;
+  }
+  .description {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    color: #fff;
+    position: absolute;
+    bottom: 40px;
+    left: 30px;
+    width: 80%;
+  }
+}
 /*# sourceMappingURL=Articles.css.map */

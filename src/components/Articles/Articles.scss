@@ -39,7 +39,6 @@
         background: transparent;
         border: 2px solid transparent;
     }
-     
 }
 
 .description{
@@ -86,5 +85,52 @@
     .description{
         font-size: 25px;
         bottom: 10px;
+    }
+}
+
+@media (min-width:1600px){
+    .articles{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        &-first{
+            background-image: url(images/beach-lg.jpg);
+        }
+        &-second{
+            background-image: url(images/smoking-lg.jpg);
+        }
+        &-third{
+            background-image: url(images/river-lg.jpg);
+        }
+        &-fourth{
+            background-image: url(images/home-desert-lg.jpg);
+        }
+
+    }
+    .article{
+        width: 480px;
+        height: 600px;
+        background-position: center center;
+        position: relative;
+        transition: transform 0.5s;
+        &:hover{
+            transform: scale(1.1);
+        }
+        &::before{
+            content: "";
+            width: 0;
+            height: 0;
+            background: transparent;
+            border: 2px solid transparent;
+        }
+         
+    }
+    .description{
+        font-family: 'Roboto', sans-serif;
+        font-size: 20px;
+        color: #fff;
+        position: absolute;
+        bottom: 40px;
+        left: 30px;
+        width: 80%;
     }
 }

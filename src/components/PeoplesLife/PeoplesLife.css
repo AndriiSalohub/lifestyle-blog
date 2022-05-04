@@ -31,6 +31,16 @@
   background-image: url(images/people-life-man-mobile.jpg);
 }
 
+.peoples-life .article-background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.265);
+  opacity: 0;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
 .life-article {
   width: 100%;
   height: 320px;
@@ -48,6 +58,10 @@
   bottom: 0;
   background: rgba(0, 0, 0, 0.2);
   z-index: 2;
+}
+
+.life-article:hover .article-background {
+  opacity: 1;
 }
 
 .life-description {
@@ -123,6 +137,21 @@
     padding: 40px;
     z-index: 3;
     font-family: 'Work Sans', sans-serif;
+  }
+}
+
+@media (min-width: 1600px) {
+  .peoples-life {
+    padding: 40px 320px 0 320px;
+  }
+  .peoples-life-first-article {
+    background-image: url(images/people-life-girl-pc-version.jpg);
+  }
+  .peoples-life-second-article {
+    background-image: url(images/people-life-man-pc-version.jpg);
+  }
+  .peoples-life-third-article {
+    background-image: url(images/people-life-guitar-pc-version.jpg);
   }
 }
 /*# sourceMappingURL=PeoplesLife.css.map */

@@ -22,6 +22,15 @@
     &-third-article{
         background-image: url(images/people-life-man-mobile.jpg);
     }
+    .article-background{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.265);
+        opacity: 0;
+        transition: all 1s;
+    }
+
 }
 
 .life-article{
@@ -40,6 +49,9 @@
         background: rgba(0,0,0,.2);
         z-index: 2;
       }
+      &:hover .article-background{
+        opacity: 1;
+    }
 }
 .life-description{
     color: #fff;
@@ -101,3 +113,20 @@
         font-family: 'Work Sans', sans-serif;
     }
 }
+
+@media (min-width:1600px){
+    .peoples-life{
+        padding: 40px 320px 0 320px;
+        &-first-article{
+            background-image: url(images/people-life-girl-pc-version.jpg);
+        }
+        &-second-article{
+            background-image: url(images/people-life-man-pc-version.jpg);
+        }
+        &-third-article{
+            background-image: url(images/people-life-guitar-pc-version.jpg);
+        }
+    }
+
+}
+

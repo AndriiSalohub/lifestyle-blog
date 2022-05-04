@@ -38,6 +38,15 @@
     }
 }
 
+.places-and-stories-background{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.422);
+    opacity: 0;
+    transition: all 1s;
+}
+
 .places-and-stories-img{
     background-position: center center;
     background-repeat: no-repeat;
@@ -54,7 +63,11 @@
         background: rgba(0,0,0,.2);
         z-index: 2;
       }
+      &:hover .places-and-stories-background{
+        opacity: 1;
+    }
 }
+
 .places-and-stories-description{
     color: #fff;
     font-size: 18px;
@@ -161,3 +174,15 @@
         padding: 20px;
     }
 }
+
+@media (min-width:1600px){
+    .places-and-stories{
+        padding: 40px 320px 0 320px;
+    }
+    .places-and-stories-img{
+        background-position: center center;
+        width: 100%;
+        height: 350px;
+    }
+}
+

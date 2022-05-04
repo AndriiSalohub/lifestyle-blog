@@ -72,10 +72,17 @@
   border: 3px solid #db9d3a;
   color: #db9d3a;
   border-radius: 5%;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -webkit-transition: .9s;
+  transition: .9s;
 }
 
 .about-us-become-an-author-read-more-btn:hover {
   color: #fff;
+  -webkit-transform: scale(1.2);
+  -ms-ransform: scale(1.2);
+  transform: scale(1.2);
   background-color: #db9d3a;
 }
 
@@ -168,6 +175,21 @@
   }
   .about-us-authors-title {
     font-family: 'Nunito', sans-serif;
+  }
+}
+
+@media (min-width: 1600px) {
+  .about-us {
+    padding: 40px 320px 0 320px;
+    padding-bottom: 20px;
+  }
+  .about-us-text {
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    padding-bottom: 15px;
+  }
+  .about-us-inform-pale-text {
+    font-size: 14px;
   }
 }
 /*# sourceMappingURL=AboutUs.css.map */

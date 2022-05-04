@@ -145,4 +145,10 @@
     height: 100%;
   }
 }
+
+@media (min-width: 1600px) {
+  .small-biography {
+    padding: 40px 320px 0 320px;
+  }
+}
 /*# sourceMappingURL=SmallBiography.css.map */
