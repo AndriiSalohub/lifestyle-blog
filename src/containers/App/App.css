@@ -1,0 +1,37 @@
+.hot-articles, .people, .stories, .places, .contact{
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    background-image: url(images/header-for-article-background.jpg);
+    color: #fff;
+}
+
+.about-us-page{
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    background-image: url(images/about-us-background.jpg);
+    color: #fff;
+}
+
+.lifestyle{
+    background-image: url(images/header-background.jpg);
+    background-position: center center;
+    height: 80vh;
+    position: relative;
+}
+
+.lifestyle-title-img{
+    background-image: url(images/header-background-title-mobile.png);
+    width: 290px;
+    height: 100px;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 50%;
+    left: 50%; 
+    transform: translate(-50%, -50%);
+}
