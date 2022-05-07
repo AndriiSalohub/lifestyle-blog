@@ -8,7 +8,7 @@
     color: #fff;
 }
 
-.about-us-page{
+.about-us-page-title-img{
     height: 90vh;
     display: flex;
     align-items: center;
@@ -16,6 +16,7 @@
     font-size: 3rem;
     background-image: url(images/about-us-background.jpg);
     color: #fff;
+    padding: 20px;
 }
 
 .lifestyle{

@@ -5,13 +5,13 @@ import { Main } from "containers/Main/Main";
 import { Footer } from "containers/Footer/Footer";
 import { Route, Routes } from "react-router-dom";
 import { HotArticles } from "pages/HotArticles/HotArticles";
-import { Switch } from "react-router";
 import { LifestylePage } from "pages/LifestylePage/LifstylePage";
 import { PeoplePage } from "pages/PeoplePage/PeoplePage";
 import { PlacesPage } from "pages/PlacesPage/PlacesPage";
 import { StoriesPage } from "pages/StoriesPage/StoriesPage";
 import { ContactPage } from "pages/ContactPage/ContactPage";
-import { AboutUsPage } from "pages/AboutUsPage/AbouUsPage";
+import { AboutUsPage } from "pages/AboutUsPage/AboutUsPage";
+import { AboutUsPageTitleImg } from "pages/AboutUsPage/AbouUsPageTitle";
 
 export const App = () => {
   return (
@@ -61,7 +61,7 @@ export const App = () => {
           path="/about-us"
           element={
             <div>
-              <Header /> <AboutUsPage /> <Footer />
+              <Header /> <AboutUsPageTitleImg /> <AboutUsPage /> <Footer />
             </div>
           }
         />

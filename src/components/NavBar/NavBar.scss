@@ -7,14 +7,13 @@
     justify-content: center;
     align-items: center;
     font-size: 1.2rem;
-  }
-  
-  .navbar-logo {
+    &-logo{
       background-image: url(images/navbar-logo.png);
       width: 200px;
       height: 100px;
       background-repeat: no-repeat;
       transform: translate(5%, 25%);
+    }
   }
   
   .nav-menu {
@@ -39,12 +38,11 @@
     font-family: 'Work Sans', sans-serif;
     text-decoration: none;
     padding: 0.5rem 1rem;
-  }
-  
-  .nav-links:hover {
-    background-color: #12171be2;
-    border-radius: 4px;
-    transition: all 0.2s ease-out;
+    &:hover{
+      background-color: #12171be2;
+      border-radius: 4px;
+      transition: all 0.2s ease-out;
+    }
   }
   
   .nav-links-mobile {
@@ -70,14 +68,13 @@
       left: -100%;
       opacity: 1;
       transition: all 0.5s ease;
-    }
-  
-    .nav-menu.active {
-      background: #1f272e;
-      left: 0;
-      opacity: 1;
-      transition: all 0.5s ease;
-      z-index: 1;
+      &.active{
+        background: #1f272e;
+        left: 0;
+        opacity: 1;
+        transition: all 0.5s ease;
+        z-index: 1;
+      }
     }
   
     .nav-links {
@@ -85,11 +82,10 @@
       padding: 2rem;
       width: 100%;
       display: table;
-    }
-  
-    .nav-links:hover {
-      background-color: #1f272ecd;
-      border-radius: 0;
+      &:hover{
+        background-color: #1f272ecd;
+        border-radius: 0;
+      }
     }
   
     .navbar-logo {
@@ -121,15 +117,10 @@
       text-decoration: none;
       color: #fff;
       font-size: 1.5rem;
-    }
-  
-    .nav-links-mobile:hover {
-      background: #fff;
-      color: #1f272ecd;
-      transition: 250ms;
-    }
-  
-    button {
-      display: none;
+      &:hover{
+        background: #fff;
+        color: #1f272ecd;
+        transition: 250ms;
+      }
     }
   }
