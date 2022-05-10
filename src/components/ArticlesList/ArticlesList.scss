@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin&family=Poppins&family=Source+Sans+Pro&display=swap');
+
+.articles-page-list{
+    padding: 0px 30px 0 30px;
+}
+
+.article-list{
+    display: grid;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    &-article{
+        &-img{
+            width: 100%;
+            height: 233px;
+            padding: 0 10px;
+            margin-bottom: 20px;
+        }
+        &-title{
+            font-size: 14px;
+            color: #181e22;
+            margin-bottom: 15px;
+            font-family: 'Poppins', sans-serif;
+        }
+        &-description{
+            color: rgba(163, 162, 162, 0.657);
+            text-align: start;
+            margin-bottom: 20px;
+            font-family: 'Source Sans Pro', sans-serif;
+        }
+    }
+}
+
+.side-bar{
+    &-search{
+        margin-top: 20px;
+        margin-bottom: 20px;
+        border-bottom: 1px solid #d0d3d4;
+        padding-bottom: 40px;
+        &-input{
+            width: 100%;
+            padding: 10px;
+            outline: none;
+            background-color: #dcdfe1;
+            border: 1px solid #d9dbdc;
+            &:hover{
+                background-color: #d4d9db;
+                border: 1px solid #dcdfe1;
+            }
+        }
+    }
+    &-bibendum-auctor{
+        border-bottom: 1px solid #d0d3d4;
+        padding-bottom: 40px;
+        margin-bottom: 40px;
+        &-title{
+            margin-bottom: 10px;
+        }
+        &-description{
+            font-size: 14px;
+            color: rgba(163, 162, 162, 0.657);
+            line-height: 18px;
+        }
+    }
+    &-categories{
+        margin-bottom: 20px;
+        border-bottom: 1px solid #d0d3d4;
+        padding-bottom: 40px;
+        &-list{
+            background-color: #da9d3b;
+            padding: 10px;
+            &-item{
+                line-height: 18px;
+                margin-bottom: 10px;
+                font-size: 14px;
+                &:last-child{
+                    margin-bottom: 0;
+                }
+                &-link{
+                    text-decoration: none;
+                    color: #fff;
+                    font-family: 'Libre Franklin', sans-serif;
+                }
+            }
+        }
+    }
+}
+
+.side-bar-title{
+    font-size: 17px;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 10px;
+}
+
+@media (min-width:370px) {   
+    .article-list{
+        &-article{
+            &-img{
+                height: 287px;
+            }
+        }
+    }
+    
+}
+
+@media (min-width:420px) {   
+    .article-list{
+        &-article{
+            &-img{
+                height: 336px;
+            }
+        }
+    }
+    
+}
+
+
+
+@media (min-width:768px) {   
+    .articles-page-list{
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+    }
+    .article-list{
+        &-article{
+            display: grid;
+            grid-template-columns: 0.6fr 1fr;
+            padding: 0px 20px 0px 0px;
+            &-img{
+                width: 100%;
+                height: 90%;
+                padding: 0 10px;
+                margin-bottom: 20px;
+            }
+            &-title{
+                padding-top: 10px;
+                font-size: 23px;
+            }
+        }
+    }
+    
+    .side-bar{
+        padding-left: 20px;
+        border-left: 1px solid #dddfde;
+    }
+}
+
+@media (min-width:992px) {
+}
+
+@media (min-width:1200px) {
+    .articles-page-list{
+        padding: 0px 130px 0 130px;
+    }
+}
+
+@media (min-width:1600px){
+    .articles-page-list{
+        padding: 0px 320px 0 320px;
+    }
+}

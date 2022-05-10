@@ -1,18 +1,24 @@
 import React from "react";
-import ReactDOM from "react-dom";
+import ReactDom from "react-dom";
+
 import { App } from "containers/App/App";
 import { BrowserRouter } from "react-router-dom";
+import { Provider } from "react-redux";
+import { articleReducer } from "redux/articleLikeCountReducer";
+import { configureStore } from "@reduxjs/toolkit";
+import { createStore } from "redux";
+import { rootReducer } from "redux/rootReducer";
 
-/*const el = (
-  <div>
-    <h1> Hello React.js </h1>
-  </div>
-);npm
-*/
+const store = createStore(
+  rootReducer,
+  window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
+);
 
-ReactDOM.render(
-  <BrowserRouter>
-    <App />
-  </BrowserRouter>,
+ReactDom.render(
+  <Provider store={store}>
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
+  </Provider>,
   document.getElementById("root")
 );

@@ -1,7 +1,7 @@
 import "./NavBar.css";
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { Squeeze as Hamburger } from "hamburger-react";
+import { Squash as Hamburger } from "hamburger-react";
 import "./NavBar.css";
 
 export const NavBar = () => {

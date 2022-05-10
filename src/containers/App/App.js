@@ -12,6 +12,7 @@ import { StoriesPage } from "pages/StoriesPage/StoriesPage";
 import { ContactPage } from "pages/ContactPage/ContactPage";
 import { AboutUsPage } from "pages/AboutUsPage/AboutUsPage";
 import { AboutUsPageTitleImg } from "pages/AboutUsPage/AbouUsPageTitle";
+import { ArticleList } from "components/ArticlesList/ArticlesList";
 
 export const App = () => {
   return (
@@ -29,7 +30,8 @@ export const App = () => {
           path="/hot-articles"
           element={
             <div>
-              <Header /> <HotArticles /> <Footer />
+              <Header /> <HotArticles /> <ArticleList category="hot-articles" />{" "}
+              <Footer />
             </div>
           }
         />
@@ -37,7 +39,8 @@ export const App = () => {
           path="/people"
           element={
             <div>
-              <Header /> <PeoplePage /> <Footer />
+              <Header /> <PeoplePage /> <ArticleList category="people" />{" "}
+              <Footer />
             </div>
           }
         />
@@ -45,7 +48,8 @@ export const App = () => {
           path="/places"
           element={
             <div>
-              <Header /> <PlacesPage /> <Footer />
+              <Header /> <PlacesPage /> <ArticleList category="places" />{" "}
+              <Footer />
             </div>
           }
         />
@@ -53,7 +57,8 @@ export const App = () => {
           path="/stories"
           element={
             <div>
-              <Header /> <StoriesPage /> <Footer />
+              <Header /> <StoriesPage /> <ArticleList category="stories" />{" "}
+              <Footer />
             </div>
           }
         />
