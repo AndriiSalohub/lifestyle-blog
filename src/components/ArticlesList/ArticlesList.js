@@ -35,6 +35,7 @@ export const ArticleList = ({ category }) => {
             <h1 className="side-bar-search-title side-bar-title">Search</h1>
             <input
               type="text"
+              placeholder="Enter your search"
               className="side-bar-search-input"
               onChange={(event) => setValue(event.target.value)}
             />
