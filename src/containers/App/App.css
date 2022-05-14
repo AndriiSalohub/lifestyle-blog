@@ -1,4 +1,4 @@
-.hot-articles, .people, .stories, .places, .contact{
+.hot-articles, .people, .stories, .places, .contact, .blog, .single-article-page{
     height: 70vh;
     display: flex;
     align-items: center;
@@ -6,6 +6,7 @@
     font-size: 3rem;
     background-image: url(images/header-for-article-background.jpg);
     color: #fff;
+    text-align: center;
 }
 
 .about-us-page-title-img{

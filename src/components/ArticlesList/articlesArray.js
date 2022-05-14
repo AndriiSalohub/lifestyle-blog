@@ -7,6 +7,8 @@ export const articlesArray = [
     img: "https://themes.muffingroup.com/be/lifestyle/wp-content/uploads/2014/03/home_lifestyle_blog_hot_4-767x750.jpg",
     category: "hot-articles",
     author: "Muffin Group",
+    path: "proin-dui-sodales-imperdiet-sit-sapien-fames-ac-luctus",
+    tag: "framework",
   },
   {
     id: 2,
@@ -16,6 +18,8 @@ export const articlesArray = [
     img: "https://themes.muffingroup.com/be/lifestyle/wp-content/uploads/2014/03/home_lifestyle_blog_hot_3-767x750.jpg",
     category: "hot-articles",
     author: "Muffin Group",
+    path: "suspen-disse-pellen-tesque-dui-proin-cursus-magna",
+    tag: "design",
   },
   {
     id: 3,
@@ -25,6 +29,8 @@ export const articlesArray = [
     img: "https://themes.muffingroup.com/be/lifestyle/wp-content/uploads/2014/03/home_lifestyle_blog_hot_2-767x750.jpg",
     category: "hot-articles",
     author: "Muffin Group",
+    path: "vitae-adipiscing-turpis-aenean-rutrum-leo-aliquet",
+    tag: "themforest",
   },
   {
     id: 4,
@@ -34,6 +40,8 @@ export const articlesArray = [
     img: "https://themes.muffingroup.com/be/lifestyle/wp-content/uploads/2014/03/home_lifestyle_blog_hot_1-767x750.jpg",
     category: "hot-articles",
     author: "Muffin Group",
+    path: "aenean-ligula-molstie-viverra-fermentum",
+    tag: "framework",
   },
   {
     id: 5,
@@ -44,6 +52,8 @@ export const articlesArray = [
     img: "https://themes.muffingroup.com/be/lifestyle/wp-content/uploads/2014/05/home_lifestyle_blog_people_4-767x750.jpg",
     category: "people",
     author: "Muffin Group",
+    path: "aenean-gravida-vitae-consequat-lorem-fermentum-rutrum-nunc-id-risus",
+    tag: "design",
   },
   {
     id: 6,
@@ -53,6 +63,8 @@ export const articlesArray = [
     img: "https://themes.muffingroup.com/be/lifestyle/wp-content/uploads/2014/05/home_lifestyle_blog_people_3-767x750.jpg",
     category: "people",
     author: "Muffin Group",
+    path: "vivamus-sit-amet-metus-sem-imperdiet",
+    tag: "design",
   },
   {
     id: 7,
@@ -62,6 +74,8 @@ export const articlesArray = [
     img: "https://themes.muffingroup.com/be/lifestyle/wp-content/uploads/2014/05/home_lifestyle_blog_people_2-767x750.jpg",
     category: "people",
     author: "Muffin Group",
+    path: "quisque-lorem-tortor-fringilla-sed-vesti-bulum",
+    tag: "framework",
   },
   {
     id: 8,
@@ -71,6 +85,8 @@ export const articlesArray = [
     img: "https://themes.muffingroup.com/be/lifestyle/wp-content/uploads/2014/05/home_lifestyle_blog_people_1-767x750.jpg",
     category: "people",
     author: "Muffin Group",
+    path: "vestibulum-commodo-volutpat-laoreet",
+    tag: "themforest",
   },
   {
     id: 9,
@@ -80,6 +96,8 @@ export const articlesArray = [
     img: "https://themes.muffingroup.com/be/lifestyle/wp-content/uploads/2014/04/home_lifestyle_blog_places_4-767x750.jpg",
     category: "places",
     author: "Muffin Group",
+    path: "nullam-nec-urna-in-sem-lacinia-malesuada-sed-mollis-tortor",
+    tag: "video",
   },
   {
     id: 10,
@@ -89,6 +107,8 @@ export const articlesArray = [
     img: "https://themes.muffingroup.com/be/lifestyle/wp-content/uploads/2014/04/home_lifestyle_blog_places_3-767x750.jpg",
     category: "places",
     author: "Muffin Group",
+    path: "aliquam-ultricies-pretium",
+    tag: "video",
   },
   {
     id: 11,
@@ -98,6 +118,8 @@ export const articlesArray = [
     img: "https://themes.muffingroup.com/be/lifestyle/wp-content/uploads/2014/04/home_lifestyle_blog_places_2-767x750.jpg",
     category: "places",
     author: "Muffin Group",
+    path: "proin-sed-hendrerit-nonummy",
+    tag: "design",
   },
   {
     id: 12,
@@ -107,6 +129,8 @@ export const articlesArray = [
     img: "https://themes.muffingroup.com/be/lifestyle/wp-content/uploads/2014/04/home_lifestyle_blog_places_1-767x750.jpg",
     category: "places",
     author: "Muffin Group",
+    path: "fusce-lorem-ligula",
+    tag: "framework",
   },
   {
     id: 13,
@@ -116,6 +140,8 @@ export const articlesArray = [
     img: "https://themes.muffingroup.com/be/lifestyle/wp-content/uploads/2014/05/home_lifestyle_blog_stories_4-767x750.jpg",
     category: "stories",
     author: "Muffin Group",
+    path: "aliquam-vitae-pede-mau-pre-tium-nec",
+    tag: "design",
   },
   {
     id: 14,
@@ -125,6 +151,8 @@ export const articlesArray = [
     img: "https://themes.muffingroup.com/be/lifestyle/wp-content/uploads/2014/05/home_lifestyle_blog_stories_3-767x750.jpg",
     category: "stories",
     author: "Muffin Group",
+    path: "praesent-ornare-hendrerit-sed-faucibus-quis-cras",
+    tag: "themforest",
   },
   {
     id: 15,
@@ -134,6 +162,8 @@ export const articlesArray = [
     img: "https://themes.muffingroup.com/be/lifestyle/wp-content/uploads/2014/05/home_lifestyle_blog_stories_2-767x750.jpg",
     category: "stories",
     author: "Muffin Group",
+    path: "videamus-animi-partes-quarum",
+    tag: "themforest",
   },
   {
     id: 16,
@@ -143,5 +173,7 @@ export const articlesArray = [
     img: "https://themes.muffingroup.com/be/lifestyle/wp-content/uploads/2014/05/home_lifestyle_blog_stories_1-767x750.jpg",
     category: "stories",
     author: "Muffin Group",
+    path: "donec-tempus-urna-risus",
+    tag: "framework",
   },
 ];

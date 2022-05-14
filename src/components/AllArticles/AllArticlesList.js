@@ -1,27 +1,32 @@
-import { useState } from "react";
-import { articlesArray } from "./articlesArray";
-import { ArticleListItem } from "./ArticlesListItem";
-
-import "./ArticlesList.css";
+import React, { useState } from "react";
+import { articlesArray } from "components/ArticlesList/articlesArray";
 import { Link } from "react-router-dom";
+import { Pagination } from "./Pagination";
 import { useDispatch, useSelector } from "react-redux";
+import { ArticleListItem } from "components/ArticlesList/ArticlesListItem";
 
-export const ArticleList = ({ category }) => {
+export const AllArticlesList = () => {
   const [value, setValue] = useState("");
 
-  const filteredArticles = articlesArray.filter((searchText) => {
+  const [currentPage, setCurrentPage] = useState(1);
+  const [articlesPerPage] = useState(4);
+  const lastArticleIndex = currentPage * articlesPerPage;
+  const firstArticleIndex = lastArticleIndex - articlesPerPage;
+  const currentArticle = articlesArray.slice(
+    firstArticleIndex,
+    lastArticleIndex
+  );
+
+  const dispatch = useDispatch();
+  const currentPageLink = useSelector((state) => state.category);
+
+  const paginate = (pageNumber) => setCurrentPage(pageNumber);
+
+  const filteredArticles = currentArticle.filter((searchText) => {
     return searchText.title.toLowerCase().includes(value.toLocaleLowerCase());
   });
 
-  const dispatch = useDispatch();
-  const currentPage = useSelector((state) => state.category);
-
-  const detectCategory = (category) => {
-    dispatch({
-      type: "CATEGORY",
-      category,
-    });
-  };
+  console.log(currentPageLink);
 
   return (
     <>
@@ -29,20 +34,15 @@ export const ArticleList = ({ category }) => {
         <div className="filter-bar">
           <div className="filter-bar-show-all">
             <div className="filter-bar-show-all-btn">
-              <Link
-                to="/blog"
-                className="show-all-btn"
-                onClick={() => detectCategory(category)}
-              >
-                Show all
+              <Link to={`/${currentPageLink[1]}`} className="show-all-btn">
+                Back to {currentPageLink[1]}
               </Link>
             </div>
           </div>
         </div>
         <div className="article-list">
-          {filteredArticles
-            .filter((el) => el.category === category)
-            .map(({ id, title, description, img, author, path, tag }) => (
+          {filteredArticles.map(
+            ({ id, title, description, img, author, path }) => (
               <div key={id}>
                 <ArticleListItem
                   id={id}
@@ -51,12 +51,16 @@ export const ArticleList = ({ category }) => {
                   img={img}
                   author={author}
                   path={path}
-                  tag={tag}
-                  category={category}
                 />
               </div>
-            ))}
+            )
+          )}
         </div>
+        <Pagination
+          articlesPerPage={articlesPerPage}
+          totalArticles={articlesArray.length}
+          paginate={paginate}
+        />
         <div className="side-bar">
           <div className="side-bar-search">
             <h1 className="side-bar-search-title side-bar-title">Search</h1>

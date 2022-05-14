@@ -13,8 +13,19 @@ import { ContactPage } from "pages/ContactPage/ContactPage";
 import { AboutUsPage } from "pages/AboutUsPage/AboutUsPage";
 import { AboutUsPageTitleImg } from "pages/AboutUsPage/AbouUsPageTitle";
 import { ArticleList } from "components/ArticlesList/ArticlesList";
+import { BlogPage } from "pages/BlogPage/BlogPage";
+import { AllArticlesList } from "components/AllArticles/AllArticlesList";
+import { useDispatch, useSelector } from "react-redux";
+import { SingleArticlePage } from "pages/SingleArticlePage/SingleArticlePage";
+import { SingleArticleInput } from "components/SingleArticleInput/SingleArticleInput";
 
 export const App = () => {
+  const dispatch = useDispatch();
+  const currentPage = useSelector((state) => state.category);
+  const articlePathLink = useSelector((state) => state.articlePath);
+
+  console.log(`/${currentPage[1]}/blog/${articlePathLink[2]}`);
+
   return (
     <>
       <Routes>
@@ -75,6 +86,30 @@ export const App = () => {
           element={
             <div>
               <Header /> <ContactPage /> <Footer />
+            </div>
+          }
+        />
+        <Route
+          path={`/blog`}
+          element={
+            <div>
+              <Header /> <BlogPage /> <AllArticlesList /> <Footer />
+            </div>
+          }
+        />
+        <Route
+          path={`${currentPage[1]}/${articlePathLink[2]}`}
+          element={
+            <div>
+              <Header /> <SingleArticlePage /> <SingleArticleInput /> <Footer />
+            </div>
+          }
+        />
+        <Route
+          path={`/blog/${articlePathLink[2]}`}
+          element={
+            <div>
+              <Header /> <SingleArticlePage /> <SingleArticleInput /> <Footer />
             </div>
           }
         />

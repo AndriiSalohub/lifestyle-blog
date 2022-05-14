@@ -1,15 +1,25 @@
-import React, { useState } from "react";
+import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { Button } from "@mui/material";
 import FavoriteIcon from "@mui/icons-material/Favorite";
 import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import "./ArticlesListItem.css";
+import { Link } from "react-router-dom";
 
-export const ArticleListItem = ({ id, title, description, img }) => {
+export const ArticleListItem = ({
+  id,
+  title,
+  description,
+  img,
+  path,
+  category,
+}) => {
   const dispatch = useDispatch();
   const isLiked = useSelector((state) => state.articleLike[id]);
   const likeCounter = useSelector((state) => state.articleLikeCounter[id]);
+  const articlePath = useSelector((state) => state.articlePath);
+  const currentPage = useSelector((state) => state.category);
 
   const removeLike = (id) => {
     dispatch({
@@ -55,11 +65,26 @@ export const ArticleListItem = ({ id, title, description, img }) => {
     },
   });
 
+  const addRoute = (id, path) => {
+    dispatch({
+      type: "ADD_PATH",
+      id,
+      path,
+    });
+  };
+
+  const detectCategory = (category) => {
+    dispatch({
+      type: "CATEGORY",
+      category,
+    });
+  };
+
   return (
     <>
       <div className="article-list">
         <div className="article-list-article">
-          <img src={img} className="article-list-article-img " />
+          <img src={img} alt="" className="article-list-article-img " />
           <div className="article-list-article-iformation">
             <div className="article-list-article-title ">{title}</div>
             <div className="article-list-article-description">
@@ -79,6 +104,18 @@ export const ArticleListItem = ({ id, title, description, img }) => {
                 </Button>
               </ThemeProvider>
               <span className="like-btn-counter">{likeCounter}</span>
+              <span className="read-more-btn">
+                <Link
+                  onClick={() => {
+                    addRoute(id, path);
+                    detectCategory(category);
+                  }}
+                  to={path}
+                  className="read-more-btn-link"
+                >
+                  Read more
+                </Link>
+              </span>
             </div>
           </div>
         </div>

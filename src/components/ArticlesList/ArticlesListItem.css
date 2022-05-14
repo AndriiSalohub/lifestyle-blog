@@ -1,10 +1,68 @@
+.like-area{
+    position: relative;
+}
+
 .like-btn-question{
-    color: rgba(163, 162, 162, 0.657);
+    color: rgb(163, 162, 162);
     padding: 10px 0 10px 10px;
+    display: none;
 }
 
 .like-btn-counter{
     margin-left: -15px;
-    color: rgba(163, 162, 162, 0.657);
+    color: rgb(163, 162, 162);
 }
 
+.read-more-btn{
+    border-left: 1px solid #d0d3d4;
+    position: absolute;
+    right: 10px;
+}
+
+.read-more-btn-link{
+    color: #db9d3a;
+    text-decoration: none;
+}
+
+.read-more-btn-link:hover{
+    text-decoration: underline;
+}
+
+.read-more-btn::before{
+    content:  url(images/read-more-icon.png);
+    padding: 10px;
+}
+
+.read-more-btn:active{
+    text-decoration: underline;
+}
+
+@media (min-width:768px) {   
+    .like-btn-question{
+        display: inline;
+    }
+}
+
+@media (min-width:992px) {
+    .read-more-btn{
+        position: absolute;
+        right: 20px;
+        top: 5px;
+    }
+}
+
+@media (min-width:1200px) {
+    .read-more-btn{
+        position: absolute;
+        right: 50px;
+        top: 10px;
+    }
+
+}
+
+@media (min-width:1600px){
+    .read-more-btn{
+        position: absolute;
+        right: 10px;
+    }
+}
