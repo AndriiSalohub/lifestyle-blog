@@ -26,8 +26,6 @@ export const AllArticlesList = () => {
     return searchText.title.toLowerCase().includes(value.toLocaleLowerCase());
   });
 
-  console.log(currentPageLink);
-
   return (
     <>
       <div className="articles-page-list">

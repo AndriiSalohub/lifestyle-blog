@@ -154,6 +154,133 @@ export const SingleArticleInput = () => {
           </div>
         </>
       );
+    } else if (articlesArray[titleName[1] - 1].tag === "framework") {
+      return (
+        <>
+          <div className="single-article-framework">
+            <div className="single-article-framework-title framework-title">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              dolore magna aliqua. Ut enim ad minim veni sit amet Lorem ipsum
+              dolor sit amet, consectetur adipisicing elit, sed do dolore magna
+              aliqua. Ut enim ad minim.
+            </div>
+            <div className="single-article-framework-first-block-text text-block">
+              <div className="single-article-framework-first-block-text-first-paragraph text-block-paragraph">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                sunt in culpa qui officia deserunt mollit anim id est laborum.
+              </div>
+              <div className="single-article-framework-first-block-text-second-paragraph text-block-paragraph">
+                Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
+                quae ab illo inventore veritatis et quasi architecto beatae
+                vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia
+                voluptas sit aspernatur aut odit aut fugit, sed quia
+                consequuntur magni dolores eos qui ratione voluptatem sequi
+                nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor
+                sit amet, consectetur, adipisci velit, sed quia non numquam eius
+                modi tempora incidunt ut labore et dolore magnam aliquam quaerat
+                voluptatem. Ut enim ad minim veniam, quis nostrud exercitation
+                ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+                aute irure dolor in reprehenderit in voluptate velit esse cillum
+                dolore eu fugiat nulla pariatur. Excepteur sint occaecat.
+              </div>
+            </div>
+            <div className="single-article-framework-big-img-block">
+              <div className="single-article-framework-big-img-block-img">
+                <img src="https://themes.muffingroup.com/be/lifestyle/wp-content/uploads/2014/03/home_lifestyle_postdetails_1_2.jpg"></img>
+                <div className="single-article-framework-big-img-block-img-description img-description">
+                  Donec eleifend in metus malesuada sem a massa
+                </div>
+              </div>
+            </div>
+            <div className="single-article-framework-quote-block">
+              <div className="single-article-framework-quote-block-quote">
+                „Lorem modi tempora incidunt ut labore et dolore magnam.”
+              </div>
+              <div className="single-article-framework-quote-block-text text-block">
+                <div className="single-article-framework-quote-block-text-first-paragraph first-paragraph">
+                  Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                  accusantium doloremque laudantium, totam rem aperiam, eaque
+                  ipsa quae ab illo inventore veritatis et quasi architecto
+                  beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem
+                  quia voluptas sit aspernatur aut odit aut fugit, sed quia
+                  consequuntur magni dolores eos qui ratione voluptatem sequi
+                  nesciunt.
+                </div>
+                <div className="single-article-framework-quote-block-text-second-paragraph second-paragraph">
+                  Neque porro quisquam est, qui dolorem ipsum quia dolor sit
+                  amet, consectetur, adipisci velit, sed quia non numquam eius
+                  modi tempora incidunt ut labore et dolore magnam aliquam
+                  quaerat voluptatem. Ut enim ad minim veniam, quis nostrud
+                  exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                  consequat. Duis aute irure dolor in reprehenderit in voluptate
+                  velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+                  sint occaecat.
+                </div>
+              </div>
+            </div>
+            <div className="single-article-framework-second-title framework-title">
+              Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+              labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+              nostrud exercitation ullamco
+            </div>
+            <div className="single-article-framework-small-text-block text-block">
+              Phasellus sit amet nunc sed leo convallis malesuada. Aliquam justo
+              augue, egestas et iaculis sed, ultrices et nisi. Suspendisse
+              potenti. Nam volutpat nunc amet. Morbi lacus ex, dignissim et dui
+              eu, commodo lobortis tortor! Proin eleifend orci purus, ac
+              sollicitudin nibh molestie sed. Aliquam erat volutpat. Duis
+              posuere beatae vitae dicta sunt explicabo.
+            </div>
+            <div className="single-article-framework-img-block">
+              <div className="single-article-framework-img-block-first-img">
+                <img src="https://themes.muffingroup.com/be/lifestyle/wp-content/uploads/2014/03/home_lifestyle_blog_hot_4.jpg"></img>
+                <div className="single-article-framework-img-block-first-img-description img-description">
+                  Donec eleifend in metus malesuada sem a massa
+                </div>
+              </div>
+              <div className="single-article-framework-img-block-second-img">
+                <img src="https://themes.muffingroup.com/be/lifestyle/wp-content/uploads/2014/05/home_lifestyle_blog_people_1.jpg"></img>
+                <div className="single-article-framework-img-block-second-img-description img-description">
+                  Nulla laoreet scelerisque tortor in fringilla sapien
+                </div>
+              </div>
+            </div>
+            <div className="single-article-framework-second-block-text text-block">
+              <div className="single-article-framework-second-block-text-first-paragraph text-block-paragraph">
+                Omnis iste natus error sit voluptatem accusantium doloremque
+                laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore
+                veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+                Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit
+                aut fugit, sed quia consequuntur magni dolores eos qui ratione
+                voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem
+                ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia
+                non numquam eius modi tempora incidunt ut labore et dolore
+                magnam aliquam quaerat voluptatem.
+              </div>
+              <div className="single-article-framework-second-block-text-second-paragraph text-block-paragraph">
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+                dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                fugiat nulla pariatur. Excepteur sint occaecat.Lorem ipsum dolor
+                sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                veniam, quis nostrud exercitation ullamco laboris nisi ut
+                aliquip ex ea commodo consequat. Duis aute irure dolor in
+                reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                sunt in culpa qui officia .
+              </div>
+            </div>
+          </div>
+        </>
+      );
+    } else if (articlesArray[titleName[1] - 1].tag === "themforest") {
     } else {
       return <h1>dwdqd</h1>;
     }
