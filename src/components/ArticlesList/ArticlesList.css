@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Libre+Franklin&family=Poppins&family=Source+Sans+Pro&display=swap");
+@import url(//db.onlinewebfonts.com/c/2c8f6c3c149c5a07410e52cfb3b2db2b?family=mfn-icons);
+@import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
 .articles-page-list {
   padding: 0px 30px 0 30px;
 }
@@ -6,6 +8,8 @@
 .filter-bar {
   height: 60px;
   position: relative;
+  margin: 0;
+  padding-top: 10px;
 }
 
 .show-all-btn {
@@ -48,10 +52,14 @@
 }
 
 .article-list-article-title {
+  margin-bottom: 15px;
+}
+
+.article-list-article-title a {
+  font-family: 'Poppins', sans-serif;
   font-size: 14px;
   color: #181e22;
-  margin-bottom: 15px;
-  font-family: 'Poppins', sans-serif;
+  text-decoration: none;
 }
 
 .article-list-article-description {
@@ -174,6 +182,8 @@
   }
   .article-list-article-title {
     padding-top: 10px;
+  }
+  .article-list-article-title a {
     font-size: 23px;
   }
   .side-bar {

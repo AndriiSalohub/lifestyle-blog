@@ -97,7 +97,7 @@ export const articlesArray = [
     category: "places",
     author: "Muffin Group",
     path: "nullam-nec-urna-in-sem-lacinia-malesuada-sed-mollis-tortor",
-    tag: "video",
+    tag: "design",
   },
   {
     id: 10,
@@ -108,7 +108,7 @@ export const articlesArray = [
     category: "places",
     author: "Muffin Group",
     path: "aliquam-ultricies-pretium",
-    tag: "video",
+    tag: "themforest",
   },
   {
     id: 11,

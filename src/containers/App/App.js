@@ -20,100 +20,102 @@ import { SingleArticlePage } from "pages/SingleArticlePage/SingleArticlePage";
 import { SingleArticleInput } from "components/SingleArticleInput/SingleArticleInput";
 
 export const App = () => {
-  const dispatch = useDispatch();
-  const currentPage = useSelector((state) => state.category);
-  const articlePathLink = useSelector((state) => state.articlePath);
+    const dispatch = useDispatch();
+    const currentPage = useSelector((state) => state.category);
+    const articlePathLink = useSelector((state) => state.articlePath);
 
-  console.log(`/${currentPage[1]}/blog/${articlePathLink[2]}`);
-
-  return (
-    <>
-      <Routes>
-        <Route
-          path="/"
-          element={
-            <div>
-              <Header /> <LifestylePage /> <Main /> <Footer />
-            </div>
-          }
-        />
-        <Route
-          path="/hot-articles"
-          element={
-            <div>
-              <Header /> <HotArticles /> <ArticleList category="hot-articles" />{" "}
-              <Footer />
-            </div>
-          }
-        />
-        <Route
-          path="/people"
-          element={
-            <div>
-              <Header /> <PeoplePage /> <ArticleList category="people" />{" "}
-              <Footer />
-            </div>
-          }
-        />
-        <Route
-          path="/places"
-          element={
-            <div>
-              <Header /> <PlacesPage /> <ArticleList category="places" />{" "}
-              <Footer />
-            </div>
-          }
-        />
-        <Route
-          path="/stories"
-          element={
-            <div>
-              <Header /> <StoriesPage /> <ArticleList category="stories" />{" "}
-              <Footer />
-            </div>
-          }
-        />
-        <Route
-          path="/about-us"
-          element={
-            <div>
-              <Header /> <AboutUsPageTitleImg /> <AboutUsPage /> <Footer />
-            </div>
-          }
-        />
-        <Route
-          path="/contact"
-          element={
-            <div>
-              <Header /> <ContactPage /> <Footer />
-            </div>
-          }
-        />
-        <Route
-          path={`/blog`}
-          element={
-            <div>
-              <Header /> <BlogPage /> <AllArticlesList /> <Footer />
-            </div>
-          }
-        />
-        <Route
-          path={`${currentPage[1]}/${articlePathLink[2]}`}
-          element={
-            <div>
-              <Header /> <SingleArticlePage /> <SingleArticleInput /> <Footer />
-            </div>
-          }
-        />
-        <Route
-          path={`/blog/${articlePathLink[2]}`}
-          element={
-            <div>
-              <Header /> <SingleArticlePage /> <SingleArticleInput /> <Footer />
-            </div>
-          }
-        />
-      </Routes>
-    </>
-  );
+    return (
+        <>
+            <Routes>
+                <Route
+                    path="/"
+                    element={
+                        <div>
+                            <Header /> <LifestylePage /> <Main /> <Footer />
+                        </div>
+                    }
+                />
+                <Route
+                    path="/hot-articles"
+                    element={
+                        <div>
+                            <Header /> <HotArticles />{" "}
+                            <ArticleList category="hot-articles" /> <Footer />
+                        </div>
+                    }
+                />
+                <Route
+                    path="/people"
+                    element={
+                        <div>
+                            <Header /> <PeoplePage />{" "}
+                            <ArticleList category="people" /> <Footer />
+                        </div>
+                    }
+                />
+                <Route
+                    path="/places"
+                    element={
+                        <div>
+                            <Header /> <PlacesPage />{" "}
+                            <ArticleList category="places" /> <Footer />
+                        </div>
+                    }
+                />
+                <Route
+                    path="/stories"
+                    element={
+                        <div>
+                            <Header /> <StoriesPage />{" "}
+                            <ArticleList category="stories" /> <Footer />
+                        </div>
+                    }
+                />
+                <Route
+                    path="/about-us"
+                    element={
+                        <div>
+                            <Header /> <AboutUsPageTitleImg /> <AboutUsPage />{" "}
+                            <Footer />
+                        </div>
+                    }
+                />
+                <Route
+                    path="/contact"
+                    element={
+                        <div>
+                            <Header /> <ContactPage /> <Footer />
+                        </div>
+                    }
+                />
+                <Route
+                    path={`/blog`}
+                    element={
+                        <div>
+                            <Header /> <BlogPage /> <AllArticlesList />{" "}
+                            <Footer />
+                        </div>
+                    }
+                />
+                <Route
+                    path={`${currentPage[1]}/${articlePathLink[2]}`}
+                    element={
+                        <div>
+                            <Header /> <SingleArticlePage />{" "}
+                            <SingleArticleInput /> <Footer />
+                        </div>
+                    }
+                />
+                <Route
+                    path={`blog/${articlePathLink[2]}`}
+                    element={
+                        <div>
+                            <Header /> <SingleArticlePage />{" "}
+                            <SingleArticleInput /> <Footer />
+                        </div>
+                    }
+                />
+            </Routes>
+        </>
+    );
 };
