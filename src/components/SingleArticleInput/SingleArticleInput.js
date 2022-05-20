@@ -2,6 +2,7 @@ import React from "react";
 import { useSelector } from "react-redux";
 import { articlesArray } from "components/ArticlesList/articlesArray";
 import "./SingleArticleInput.css";
+import { Comments } from "components/Comments/Comments";
 
 export const SingleArticleInput = () => {
     const titleName = useSelector((state) => state.articlePath);
@@ -171,6 +172,7 @@ export const SingleArticleInput = () => {
                             luctus et nisl. Sed diam eu odio. Morbi.
                         </div>
                     </div>
+                    <Comments currentUserId="1" />
                 </div>
             </>
         );
@@ -323,6 +325,7 @@ export const SingleArticleInput = () => {
                             cupidatat non proident, sunt in culpa qui officia .
                         </div>
                     </div>
+                    <Comments currentUserId="1" />
                 </div>
             </>
         );
@@ -477,6 +480,7 @@ export const SingleArticleInput = () => {
                             Sed diam eu odio. Morbi.
                         </div>
                     </div>
+                    <Comments currentUserId="1" />
                 </div>
             </>
         );

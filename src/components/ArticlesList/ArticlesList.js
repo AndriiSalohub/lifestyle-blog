@@ -1,10 +1,9 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import { articlesArray } from "./articlesArray";
 import { ArticleListItem } from "./ArticlesListItem";
 import "./ArticlesList.css";
 import { Link } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
-import { People } from "@mui/icons-material";
 
 export const ArticleList = ({ category }) => {
     const [value, setValue] = useState("");
@@ -18,13 +17,6 @@ export const ArticleList = ({ category }) => {
     const dispatch = useDispatch();
     const currentPage = useSelector((state) => state.category);
 
-    const [categories, setCategories] = useState({
-        1: "Hot - articles",
-        2: "People",
-        3: "Places",
-        4: "Stories",
-    });
-
     const detectCategory = (category) => {
         dispatch({
             type: "CATEGORY",
@@ -36,6 +28,7 @@ export const ArticleList = ({ category }) => {
         <>
             <div className="articles-page-list">
                 <div className="filter-bar">
+                    <div></div>
                     <div className="filter-bar-show-all">
                         <div className="filter-bar-show-all-btn">
                             <Link

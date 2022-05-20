@@ -18,6 +18,7 @@ import { AllArticlesList } from "components/AllArticles/AllArticlesList";
 import { useDispatch, useSelector } from "react-redux";
 import { SingleArticlePage } from "pages/SingleArticlePage/SingleArticlePage";
 import { SingleArticleInput } from "components/SingleArticleInput/SingleArticleInput";
+import { Contact } from "components/Contact/Contact";
 
 export const App = () => {
     const dispatch = useDispatch();
@@ -84,7 +85,7 @@ export const App = () => {
                     path="/contact"
                     element={
                         <div>
-                            <Header /> <ContactPage /> <Footer />
+                            <Header /> <ContactPage /> <Contact /> <Footer />
                         </div>
                     }
                 />

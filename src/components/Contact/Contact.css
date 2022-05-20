@@ -1,0 +1,291 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand&family=Radio+Canada&display=swap");
+.contact {
+  padding: 60px 30px 0 30px;
+}
+
+.contact-title {
+  color: #181e22;
+  font-size: 18px;
+  line-height: 20px;
+  letter-spacing: 0px;
+  padding-bottom: 20px;
+}
+
+.contact-title-underline {
+  width: 110px;
+  height: 4px;
+  background: #db9d3a;
+  display: inline-block;
+  margin-bottom: 30px;
+}
+
+.contact-form-block-text-title {
+  font-size: 35px;
+  line-height: 26px;
+  letter-spacing: 0px;
+  margin-bottom: 15px;
+}
+
+.contact-form-block-text-sub-title {
+  color: #181e22;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0px;
+  margin-bottom: 15px;
+}
+
+.contact-form-block-text-information {
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0px;
+  margin-bottom: 15px;
+  color: #939393;
+  margin-bottom: 30px;
+}
+
+.contact-form-block-form-container-send-message-btn {
+  margin-bottom: 30px;
+  margin-top: 15px;
+  padding: 10px;
+  width: 50%;
+  border: 3px solid #db9d3a;
+  color: #db9d3a;
+  border-radius: 5%;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -webkit-transition: .9s;
+  transition: .9s;
+}
+
+.contact-form-block-form-container-send-message-btn:hover {
+  color: #fff;
+  -webkit-transform: scale(1.2);
+  -ms-ransform: scale(1.2);
+  transform: scale(1.2);
+  background-color: #db9d3a;
+}
+
+.contact-change-text-block-text-title {
+  font-size: 35px;
+  line-height: 26px;
+  letter-spacing: 0px;
+  margin-bottom: 15px;
+}
+
+.contact-change-text-block-text-sub-title {
+  color: #181e22;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0px;
+  margin-bottom: 15px;
+}
+
+.contact-change-text-block-text-information {
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0px;
+  margin-bottom: 15px;
+  color: #939393;
+  margin-bottom: 30px;
+}
+
+.contact-change-text-block-changer-text {
+  color: #939393;
+  margin-bottom: 60px;
+  font-family: 'Radio Canada', sans-serif;
+}
+
+.changer-title {
+  border-bottom: 1px solid #dddfde;
+  padding-bottom: 20px;
+  font-family: 'Radio Canada', sans-serif;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #181e22;
+  -webkit-transition: color .4s ease-in-out;
+  transition: color .4s ease-in-out;
+}
+
+.changer-title:hover {
+  color: #db9d3a;
+  -webkit-transition: color .7s ease-in-out;
+  transition: color .7s ease-in-out;
+}
+
+.your-name-input {
+  margin-bottom: 15px;
+}
+
+.your-email-input {
+  margin-bottom: 15px;
+}
+
+.subject-input {
+  margin-bottom: 30px;
+}
+
+.inputs {
+  width: 100%;
+  padding: 10px;
+  outline: none;
+  background-color: #dcdfe1;
+  border: 1px solid #d9dbdc;
+}
+
+.inputs:hover {
+  background-color: #d4d9db;
+  border: 1px solid #dcdfe1;
+}
+
+@media (min-width: 768px) {
+  .contact {
+    padding: 60px 60px 0 60px;
+  }
+  .contact-title {
+    font-size: 26px;
+    line-height: 29px;
+    letter-spacing: 0px;
+  }
+  .contact-form-block {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 0.6fr 1fr;
+        grid-template-columns: 0.6fr 1fr;
+  }
+  .contact-form-block-text {
+    padding-right: 25px;
+  }
+  .contact-form-block-text-title {
+    padding-top: 15px;
+    font-size: 46px;
+    line-height: 35px;
+  }
+  .contact-form-block-form-container-send-message-btn {
+    width: 40%;
+  }
+  .contact-change-text-block {
+    margin-top: 40px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 0.6fr 1fr;
+        grid-template-columns: 0.6fr 1fr;
+  }
+  .contact-change-text-block-text {
+    padding-right: 25px;
+  }
+  .contact-change-text-block-text-title {
+    padding-top: 15px;
+    font-size: 46px;
+    line-height: 35px;
+  }
+  .contact-change-text-block-changer-titles-block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .contact-change-text-block-changer-text {
+    color: #939393;
+    margin-bottom: 60px;
+    font-family: 'Radio Canada', sans-serif;
+  }
+  .changer-title {
+    margin-right: 10px;
+    font-family: 'Radio Canada', sans-serif;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #181e22;
+    -webkit-transition: color .4s ease-in-out;
+    transition: color .4s ease-in-out;
+  }
+  .changer-title:hover {
+    color: #db9d3a;
+    -webkit-transition: color .7s ease-in-out;
+    transition: color .7s ease-in-out;
+  }
+  .your-name-input {
+    width: 45% !important;
+    margin-right: 20px;
+  }
+  .your-email-input {
+    width: 50% !important;
+  }
+  .subject-input {
+    margin-bottom: 20px;
+  }
+}
+
+@media (min-width: 992px) {
+  .contact-title {
+    font-size: 30px;
+    line-height: 34px;
+    font-weight: 400;
+    letter-spacing: 0px;
+  }
+  .contact-form-block-text {
+    padding-right: 25px;
+  }
+  .contact-form-block-text-title {
+    line-height: 43px;
+    padding-top: 10px;
+  }
+  .contact-form-block-form-container-send-message-btn {
+    width: 30%;
+  }
+  .contact-change-text-block-text {
+    padding-right: 25px;
+  }
+  .contact-change-text-block-text-title {
+    line-height: 43px;
+    padding-top: 10px;
+  }
+  .your-name-input {
+    width: 46% !important;
+    margin-right: 20px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .contact {
+    padding: 40px 130px 0 130px;
+  }
+  .contact-title {
+    font-size: 30px;
+    line-height: 34px;
+    font-weight: 400;
+    letter-spacing: 0px;
+  }
+  .contact-form-block-text {
+    padding-right: 100px;
+  }
+  .contact-form-block-text-title {
+    font-size: 58px;
+    line-height: 43px;
+    padding-top: 10px;
+  }
+  .contact-form-block-form-container-send-message-btn {
+    width: 30%;
+  }
+  .contact-change-text-block-text {
+    padding-right: 100px;
+  }
+  .contact-change-text-block-text-title {
+    font-size: 58px;
+    line-height: 43px;
+    padding-top: 10px;
+  }
+  .your-name-input {
+    width: 47% !important;
+    margin-right: 20px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .contact {
+    padding: 40px 320px 0 320px;
+  }
+  .your-name-input {
+    width: 47.3% !important;
+    margin-right: 20px;
+  }
+}
+/*# sourceMappingURL=Contact.css.map */
