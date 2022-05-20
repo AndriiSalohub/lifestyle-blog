@@ -74,6 +74,11 @@
   font-family: 'Work Sans', sans-serif;
 }
 
+.life-description a {
+  text-decoration: none;
+  color: #fff;
+}
+
 @media (min-width: 768px) {
   .peoples-life {
     display: -ms-grid;

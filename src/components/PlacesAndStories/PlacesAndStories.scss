@@ -76,6 +76,10 @@
     padding: 40px;
     z-index: 3;
     font-family: 'Work Sans', sans-serif;
+    & a{
+        text-decoration: none;
+        color: #fff;
+    }
 }
 
 @media (min-width:768px) {   

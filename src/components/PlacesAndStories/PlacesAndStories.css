@@ -85,6 +85,11 @@
   font-family: 'Work Sans', sans-serif;
 }
 
+.places-and-stories-description a {
+  text-decoration: none;
+  color: #fff;
+}
+
 @media (min-width: 768px) {
   .places-and-stories {
     display: -ms-grid;
