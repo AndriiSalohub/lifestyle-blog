@@ -54,12 +54,19 @@
             border-radius: 5%;
             transition-property: all;
             transition: .9s;
+            & a{
+                text-decoration: none;
+                color: #db9d3a;
+            }
             &:hover{
                 color: #fff;
                 -webkit-transform: scale(1.2);
                 -ms-ransform: scale(1.2);
                 transform: scale(1.2);
                 background-color: #db9d3a;
+            }
+            &:hover a{
+                color: #fff;
             }
         }
     }

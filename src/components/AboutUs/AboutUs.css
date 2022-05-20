@@ -78,12 +78,21 @@
   transition: .9s;
 }
 
+.about-us-become-an-author-read-more-btn a {
+  text-decoration: none;
+  color: #db9d3a;
+}
+
 .about-us-become-an-author-read-more-btn:hover {
   color: #fff;
   -webkit-transform: scale(1.2);
   -ms-ransform: scale(1.2);
   transform: scale(1.2);
   background-color: #db9d3a;
+}
+
+.about-us-become-an-author-read-more-btn:hover a {
+  color: #fff;
 }
 
 .authors {
