@@ -26,8 +26,8 @@
 .nav-menu {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (auto)[7];
-      grid-template-columns: repeat(7, auto);
+  -ms-grid-columns: (auto)[8];
+      grid-template-columns: repeat(8, auto);
   grid-gap: 10px;
   list-style: none;
   text-align: center;

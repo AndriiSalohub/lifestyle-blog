@@ -18,8 +18,6 @@ export const ArticleListItem = ({
     const dispatch = useDispatch();
     const isLiked = useSelector((state) => state.articleLike[id]);
     const likeCounter = useSelector((state) => state.articleLikeCounter[id]);
-    const articlePath = useSelector((state) => state.articlePath);
-    const currentPage = useSelector((state) => state.category);
 
     const removeLike = (id) => {
         dispatch({

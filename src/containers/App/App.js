@@ -116,6 +116,14 @@ export const App = () => {
                         </div>
                     }
                 />
+                <Route
+                    path={`/favourite`}
+                    element={
+                        <div>
+                            <Header /> <Footer />
+                        </div>
+                    }
+                />
             </Routes>
         </>
     );
