@@ -7,6 +7,8 @@ import { Comments } from "components/Comments/Comments";
 export const SingleArticleInput = () => {
     const titleName = useSelector((state) => state.articlePath);
 
+    window.scrollTo(0, 0);
+
     if (articlesArray[titleName[1] - 1].tag === "design") {
         return (
             <>
