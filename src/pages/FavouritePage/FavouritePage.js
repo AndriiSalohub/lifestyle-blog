@@ -1,5 +1,5 @@
 import React from "react";
 
-export const FavoritePage = () => {
-    return <h1 className="favourite-page">Hot articles</h1>;
+export const FavouritePage = () => {
+    return <h1 className="favourite">Favorite Page</h1>;
 };

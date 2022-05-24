@@ -19,6 +19,8 @@ import { useDispatch, useSelector } from "react-redux";
 import { SingleArticlePage } from "pages/SingleArticlePage/SingleArticlePage";
 import { SingleArticleInput } from "components/SingleArticleInput/SingleArticleInput";
 import { Contact } from "components/Contact/Contact";
+import { FavouritePage } from "pages/FavouritePage/FavouritePage";
+import { LikedArticles } from "components/LikedArticles/LikedArticles";
 
 export const App = () => {
     const dispatch = useDispatch();
@@ -120,7 +122,17 @@ export const App = () => {
                     path={`/favourite`}
                     element={
                         <div>
-                            <Header /> <Footer />
+                            <Header /> <FavouritePage /> <LikedArticles />{" "}
+                            <Footer />
+                        </div>
+                    }
+                />
+                <Route
+                    path={`favourite/${articlePathLink[2]}`}
+                    element={
+                        <div>
+                            <Header /> <SingleArticlePage />{" "}
+                            <SingleArticleInput /> <Footer />
                         </div>
                     }
                 />
